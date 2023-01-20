@@ -1,9 +1,14 @@
 import heroes, {owners} from '../data/heroes'
 
-console.log(owners);
+//console.log(owners);
 const getHeroeById = (id) => heroes.find((heroe) => heroe.id === id);
 
-console.log(getHeroeById(5));
+//console.log(getHeroeById(5));
 
 const getHeroeByOwner = (owner) =>  heroes.filter((heroe) => heroe.owner === owner);
-console.log(getHeroeByOwner('DC'));
+//console.log(getHeroeByOwner('DC'));
+
+export{
+    getHeroeById,
+    getHeroeByOwner
+}
